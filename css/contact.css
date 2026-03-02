@@ -1,0 +1,128 @@
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 80px;
+}
+
+.contact-heading {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 58px;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.contact-sub {
+  font-size: 15px;
+  color: var(--dim);
+  max-width: 380px;
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-link-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 14px;
+  color: var(--dim);
+  background: var(--card);
+  transition: border-color 0.25s, color 0.25s, background 0.25s;
+}
+
+.contact-link-item:hover {
+  border-color: var(--accent-mid);
+  color: var(--text);
+  background: var(--accent-light);
+}
+
+.contact-link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  color: var(--accent-mid);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dim);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 12px 14px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--accent);
+}
+
+.form-textarea {
+  height: 130px;
+  resize: vertical;
+}
+
+.btn-submit {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 14px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to right, var(--accent) 50%, var(--text) 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+  margin-top: 8px;
+}
+
+.btn-submit:hover {
+  background-position: left;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .contact-heading {
+    font-size: 42px;
+    white-space: normal;
+  }
+}

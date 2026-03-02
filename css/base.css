@@ -1,0 +1,145 @@
+:root {
+  --bg: #f8fbff;
+  --bg2: #eaeff5;
+  --bg3: #e0e7ef;
+  --bg4: #f0f4f8;
+  --accent: #3a7cbf;
+  --accent-light: #dde8f3;
+  --accent-mid: #8db4d8;
+  --dim: #4f5e6b;
+  --border: #c8d5e0;
+  --text: #141c24;
+  --card: #ffffff;
+  --border-lighter: #d4dfe8;
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Instrument Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-wrap {
+  width: 100%;
+}
+
+.section-wrap+.section-wrap>.section-inner {
+  border-top: 1px solid var(--border-lighter);
+}
+
+.section-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 56px;
+}
+
+.sec-ice {
+  background: var(--bg);
+}
+
+.sec-mist {
+  background: var(--bg2);
+}
+
+.sec-slate {
+  background: var(--bg3);
+}
+
+.sec-frost {
+  background: var(--bg4);
+}
+
+.sec-white {
+  background: #ffffff;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 56px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.d1 {
+  transition-delay: 0.08s;
+}
+
+.reveal.d2 {
+  transition-delay: 0.16s;
+}
+
+.reveal.d3 {
+  transition-delay: 0.24s;
+}
+
+.reveal.d4 {
+  transition-delay: 0.32s;
+}
+
+.reveal.d5 {
+  transition-delay: 0.40s;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .section-inner {
+    padding: 56px 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .section-title {
+    font-size: 38px;
+  }
+}
