@@ -1,14 +1,7 @@
 # Portfolio
 
-Personal portfolio site for Andrew Chan — full-stack developer and CS student at UC Riverside.
+## About
+This portfolio showcases projects I designed and implemented end-to-end from API design and database modeling to responsive frontend interfaces.
 
-## Structure
-
-- `index.html` — single-page layout with sections for projects, skills, experience, and contact
-- `css/` — modular stylesheets split by section
-- `js/` — scroll reveal animations and mobile nav toggle
-- `static/` — favicon and images
-
-## Running
-
-Open `index.html` in a browser. No build step or dependencies needed.
+### Live Demo
+[ac-gh-19.github.io/portfolio/](https://ac-gh-19.github.io/portfolio)
