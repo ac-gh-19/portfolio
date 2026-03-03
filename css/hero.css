@@ -127,18 +127,27 @@
 
 .social-pill {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 3px;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
   padding: 8px 12px;
   border-radius: 6px;
   background: transparent;
   transition: background 0.2s;
-  min-width: 58px;
 }
 
 .social-pill:hover {
   background: var(--accent-light);
+}
+
+.social-pill-icon {
+  flex-shrink: 0;
+  color: var(--dim);
+  transition: color 0.2s;
+}
+
+.social-pill:hover .social-pill-icon {
+  color: var(--accent);
 }
 
 .social-pill-label {
@@ -288,10 +297,11 @@
 
   .hero-socials {
     gap: 4px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .social-pill {
-    min-width: 50px;
     padding: 7px 8px;
   }
 }
